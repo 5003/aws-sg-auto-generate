@@ -1,0 +1,19 @@
+---
+aws_security_group:
+  name: ""
+  description: ""
+  vpc_id: ""
+  inbound_rules:
+    internal_all_tcp_ports:
+      enabled: yes
+    internal_all_udp_ports:
+      enabled: yes
+    custom_ports:
+      ssh:
+        from_port: 22
+        to_port: 22
+        protocol: tcp
+        cidr_blocks: ""
+  outbound_rules:
+    all_ip_protocols:
+      enabled: yes

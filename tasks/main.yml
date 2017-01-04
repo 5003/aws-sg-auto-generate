@@ -1,0 +1,4 @@
+---
+- name: auto generated code
+  become: yes
+  template: src=terraform/main.tf dest=/opt/aws_sg/
